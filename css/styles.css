@@ -25,3 +25,11 @@ a:hover{
 	color: #fff;
 	background-color: #182d2d;
 }
+small{
+	color: #000;
+}
+img#imgprofile{
+	border: 1px solid #fff;
+	border-radius: 100px;
+	height: 200px;
+}
