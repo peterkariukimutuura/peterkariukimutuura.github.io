@@ -1,8 +1,27 @@
-div#firstrow{
-	background-color: #ede;
+nav{
+	line-height: 6;
 }
-div#secondrow{
-	height: 200px;
-	margin-top: 20px;
+ul.mynav{
+	padding: 0;
+	list-style: none;
+}
+ul.mynav li{
+	width: 7%;
+	background-color: aqua;	
 	
+	 margin: 2px;
+	 display: inline;
+}
+
+a{
+	padding: 20px;
+
+	text-decoration: none;
+	font-weight: bold;
+	    background-color: #d4cdcd;
+}
+a:hover{
+	text-decoration: none;
+	color: #fff;
+	background-color: #182d2d;
 }
