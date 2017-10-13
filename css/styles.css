@@ -13,14 +13,14 @@ ul.mynav li{
 	 display: inline;
 }
 
-a{
+a.headnav{
 	padding: 20px;
 
 	text-decoration: none;
 	font-weight: bold;
 	    background-color: #d4cdcd;
 }
-a:hover{
+a.headnav:hover{
 	text-decoration: none;
 	color: #fff;
 	background-color: #182d2d;
@@ -31,5 +31,5 @@ small{
 img#imgprofile{
 	border: 1px solid #fff;
 	border-radius: 100px;
-	height: 200px;
+	height: 300px;
 }
