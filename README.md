@@ -1,7 +1,7 @@
 # Peter Kariuki Mutuura Personal Portfolio
 
 
-## Description
+### Description
 
-### This is a simple personal portfolio about Karisyg
+##### This is a simple personal portfolio about Karisyg
 
