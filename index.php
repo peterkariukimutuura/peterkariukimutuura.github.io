@@ -1,7 +1,3 @@
-<?php
-session_start();
-session_regenerate_id(true);
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -165,38 +161,6 @@ session_regenerate_id(true);
 			<a href="https://www.facebook.com/KarisYgBorabora"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a>&nbsp&nbsp&nbsp <a href="https://github.com/karisYg"><i class="fa fa-github" aria-hidden="true"></i> Github</a>&nbsp&nbsp  Email <b class="text-info">
 			<i class="fa fa-envelope-o" aria-hidden="true"></i>
  kariukipeter30@gmail.com</b>
-		</p>
-		            <?php 
-           //Gets the IP address
-           $ip = getenv("REMOTE_ADDR") ; 
-           echo "<p id='tag'>Your IP is " . $ip.'</p>';
-
-
-           
-            $counter_name = "counter.txt";
-            // Check if a text file exists. If not create one and initialize it to zero.
-            if (!file_exists($counter_name)) {
-              $f = fopen($counter_name, "w");
-              fwrite($f,"0");
-              fclose($f);
-            }
-            // Read the current value of our counter file
-            $f = fopen($counter_name,"r");
-            $counterVal = fread($f, filesize($counter_name));
-            fclose($f);
-            // Has visitor been counted in this session?
-            // If not, increase counter value by one
-            if(!isset($_SESSION['hasVisited'])){
-              $_SESSION['hasVisited']="yes";
-              $counterVal++;
-              $f = fopen($counter_name, "w");
-              fwrite($f, $counterVal);
-              fclose($f); 
-            }
-            echo "<p id='tag'> You are visitor number ". $counterVal ."  to this site</p>";
-
-
-           ?>
 	</div><br><br><br><hr>
 
 
