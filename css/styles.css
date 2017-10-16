@@ -32,5 +32,9 @@ img#imgprofile{
 	border: 1px solid #fff;
 	border-radius: 100px;
 	height: 300px;
-	width:100%;
+}
+@media (max-width: 375px){
+	h2#head{
+		    font-size: 20px;
+	}
 }
