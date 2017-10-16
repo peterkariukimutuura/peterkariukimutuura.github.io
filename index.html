@@ -10,14 +10,15 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <link rel="icon" href="images/karis.jpg" >
 </head>
 <body>
 	<div class="container">
 	<div class="row">
 		<div class="col-md-8">
-			<h2  class="text-info"  style="line-height: 3;">Peter Kariuki Mutuura
+			<h2  id="head" class="text-info"  style="line-height: 3;">I'm Peter Kariuki Mutuura,
 				<span class="glyphicons glyphicons-heart"> </span>
-				<small >Personal Portfolio</small></h2>
+				</h2><small style="font-size: 15px;">A Software Programmer. </small>
 		</div>
 		
 		<nav class="col-md-4">
@@ -30,7 +31,7 @@
 		
 	</div>
 	<div class="row text-center">
-		<img id="imgprofile" src="images/heaven.jpg" alt="the heavens" > 
+		<img id="imgprofile" src="images/karis.JPG"  class="img-responsive" alt="Peter Kariuki Mutuura" > 
 
 	</div><br>
 	<div class="row">
@@ -161,6 +162,37 @@
 			<i class="fa fa-envelope-o" aria-hidden="true"></i>
  kariukipeter30@gmail.com</b>
 		</p>
+		            <?php 
+           //Gets the IP address
+           $ip = getenv("REMOTE_ADDR") ; 
+           echo "<p id='tag'>Your IP is " . $ip.'</p>';
+
+
+           
+            $counter_name = "counter.txt";
+            // Check if a text file exists. If not create one and initialize it to zero.
+            if (!file_exists($counter_name)) {
+              $f = fopen($counter_name, "w");
+              fwrite($f,"0");
+              fclose($f);
+            }
+            // Read the current value of our counter file
+            $f = fopen($counter_name,"r");
+            $counterVal = fread($f, filesize($counter_name));
+            fclose($f);
+            // Has visitor been counted in this session?
+            // If not, increase counter value by one
+            if(!isset($_SESSION['hasVisited'])){
+              $_SESSION['hasVisited']="yes";
+              $counterVal++;
+              $f = fopen($counter_name, "w");
+              fwrite($f, $counterVal);
+              fclose($f); 
+            }
+            echo "<p id='tag'> You are visitor number ". $counterVal ."  to this site</p>";
+
+
+           ?>
 	</div><br><br><br><hr>
 
 
