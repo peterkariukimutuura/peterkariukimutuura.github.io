@@ -1,6 +1,14 @@
 nav{
 	line-height: 6;
 }
+body{
+	font-family: 'Josefin Sans', sans-serif
+}
+h2#head{
+	font-family: 'Nosifer', cursive;
+	margin-bottom: 0px;
+	line-height: 3;
+}
 ul.mynav{
 	padding: 0;
 	list-style: none;
@@ -31,12 +39,15 @@ small{
 img#imgprofile{
 	border: 1px solid #fff;
 	border-radius: 100px;
-	width: 100%;
+	/*width: 50%;*/
 	height: 400px;
 
 }
 @media (max-width: 375px){
 	h2#head{
 		    font-size: 20px;
+	}
+	img#imgprofile{
+		width: 100%;
 	}
 }
