@@ -48,6 +48,9 @@ img#imgprofile{
 	img#imgprofile{
 		width: 100%;
 	}
+	ul.mynav li{
+		margin:0px;
+	}
 }
 
 
