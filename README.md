@@ -3,12 +3,13 @@
 
 ### Description
 
-##### This is a simple personal portfolio about  Me. The Portfolio clearly explains my vast skills with computer programming web languages. 
+This is a simple personal portfolio about  Me. The Portfolio clearly explains my vast skills with computer programming web languages. It also clearly Lists Some of My Online work Done.
+
 
 
 
 
 ### Technologies Used
 
-#### The languages include javascript jquery ,php, mysqli, laravel, python, flask , django
+The Site is just a Simple HTML&CSS3 page.
 
