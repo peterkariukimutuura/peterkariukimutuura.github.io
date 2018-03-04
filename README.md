@@ -1,6 +1,6 @@
 # Welcome To My Portfolio
 
-I am Peter Kariuki , My Friends Call me Karis , You can, I am a polygot Software Developer, An expert in php and Javascript :-D.
+I am Peter Kariuki , My Friends Call me Karis , You can, I am a polygot Software Developer, \ An expert in php and Javascript :-D.
 
 ### To Break the Cocktail of languages I use to write Huge Software products.
 
