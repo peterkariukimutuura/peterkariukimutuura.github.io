@@ -1,15 +1,33 @@
-# Peter Kariuki Mutuura Personal Portfolio
+# Welcome To My Portfolio
+
+I am Peter Kariuki , My Friends Call me Karis , You can, I am a polygot Software Developer, An expert in php and Javascript :-D.
+
+### To Break the Cocktail of languages I use to write Huge Software products.
+
+- Javascript
+- Jquery
+- Vue js
+- Php 
+- Laravel
+- Mysqli
+- Sql
+- Bootstrap
+- HTML5 CSS
 
 
-### Description
+### I also Have Interests In the Following Languages
 
-This is a simple personal portfolio about  Me. The Portfolio clearly explains my vast skills with computer programming web languages. It also clearly Lists Some of My Online work Done.
+- Python Specifically Django Framework
+- Java And Spring Framework
+- Hybrid Programming
+- Android Development
+- Angular Js
+- React Js
+
+
+### Reach Me on this Number +254712169695 or Email : peterkariukimutuura@gmail.com
 
 
 
 
-
-### Technologies Used
-
-The Site is just a Simple HTML&CSS3 page.
 
