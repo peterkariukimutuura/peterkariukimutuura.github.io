@@ -308,6 +308,7 @@
       $('small#message').hide();
     }
     if (errors) {
+      $('#confirmation_message').show();
       console.log(info);
       SaveMessage(info);
     }
@@ -315,6 +316,7 @@
   }
 
   function SaveMessage(info){
+     $('form#contact-form')[0].reset();
     var newMessageRef=messagesRef.push();
     newMessageRef.set({
       name:$('input#name').val(),
@@ -322,6 +324,11 @@
       phonenumber:$('input#phonenumber').val() !=='' ? $('input#phonenumber').val() :'Not Set!',
       message:$('input#message').val(),
     });
+    setTimeout(function(){
+      $('#confirmation_message').html('Sent!');
+      $('#confirmation_message').html('Sending.....');
+      $('#confirmation_message').hide();
+    }, 2000);
   }
   console.log("%cSTOP! I am watching you!", "color: red; font-size: x-large");
   
