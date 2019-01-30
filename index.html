@@ -243,11 +243,12 @@
   function OctoGoggles(){
     toastr.clear();
     var info={};
-    var errors=false;
+    var errors=true;
     $('form#contact-form').find('.form-control').each(function(){
           info[$(this).attr('name')]=$(this).val();
     });
     if (info.name=='') {
+      errors==false;
       $('small#name').fadeIn();
       $('input#name').css('border-color','red');
     }else{
@@ -255,6 +256,7 @@
       $('small#name').hide();
     }
     if (info.email=='') {
+      errors==false;
       $('input#email').css('border-color','red');
       $('small#email').fadeIn();
     }else{
@@ -262,13 +264,17 @@
       $('small#email').hide();
     }
     if (info.message=='') {
-      $('input#message').css('border-color','red');
+      errors==false;
+      $('textarea#message').css('border-color','red');
       $('small#message').fadeIn();
     }else{
-      $('input#message').css('border-color','#ccc');
+      $('textarea#message').css('border-color','#ccc');
       $('small#message').hide();
     }
-    console.log(info);
+    if (!errors) {
+      console.log(info);
+      
+    }
 
   }
   console.log("%cSTOP! I am watching you!", "color: red; font-size: x-large");
