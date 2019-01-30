@@ -238,7 +238,19 @@
 </div>
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="js/toastr.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
 <script type="text/javascript">
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAXL3ed4LfBB0aYdeBF7xfwAToLBel7EPs",
+    authDomain: "peterkariukimutuura-github.firebaseapp.com",
+    databaseURL: "https://peterkariukimutuura-github.firebaseio.com",
+    projectId: "peterkariukimutuura-github",
+    storageBucket: "peterkariukimutuura-github.appspot.com",
+    messagingSenderId: "686781740672"
+  };
+  firebase.initializeApp(config);
 
   function OctoGoggles(){
     toastr.clear();
