@@ -245,28 +245,29 @@
     var info={};
     var errors=false;
     $('form#contact-form').find('.form-control').each(function(){
-      if ($(this).attr('name')=='name' && $(this).val()=='') {
-        $('small#name').fadeIn();
-
-      }else{
-        $('small#name').hide();
-      }
-      if ($(this).attr('name')=='email' && $(this).val()=='') {
-        $('small#email').fadeIn();
-
-      }else{
-        $('small#email').hide();
-      }
-
-      if ($(this).attr('name')=='message' && $(this).val()=='') {
-        $('small#message').fadeIn();
-
-      }else{
-        $('small#message').hide();
-      }
-      info[$(this).attr('name')]=$(this).val();
-
+          info[$(this).attr('name')]=$(this).val();
     });
+    if (info.name=='') {
+      $('small#name').fadeIn();
+      $('input#name').css('border-color','red');
+    }else{
+      $('input#name').css('border-color','#ccc');
+      $('small#name').hide();
+    }
+    if (info.email=='') {
+      $('input#email').css('border-color','red');
+      $('small#email').fadeIn();
+    }else{
+      $('input#email').css('border-color','#ccc');
+      $('small#email').hide();
+    }
+    if (info.message=='') {
+      $('input#message').css('border-color','red');
+      $('small#message').fadeIn();
+    }else{
+      $('input#message').css('border-color','#ccc');
+      $('small#message').hide();
+    }
     console.log(info);
 
   }
