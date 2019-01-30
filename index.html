@@ -261,16 +261,17 @@
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="js/toastr.min.js"></script>
 
+
 <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
-<script type="text/javascript">
+<script>
   // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyAXL3ed4LfBB0aYdeBF7xfwAToLBel7EPs",
-    authDomain: "peterkariukimutuura-github.firebaseapp.com",
-    databaseURL: "https://peterkariukimutuura-github.firebaseio.com",
-    projectId: "peterkariukimutuura-github",
-    storageBucket: "peterkariukimutuura-github.appspot.com",
-    messagingSenderId: "686781740672"
+    apiKey: "AIzaSyCHkkch_s5b9oFohMeuFMTjNavfDr_h5DE",
+    authDomain: "octo-goggles.firebaseapp.com",
+    databaseURL: "https://octo-goggles.firebaseio.com",
+    projectId: "octo-goggles",
+    storageBucket: "octo-goggles.appspot.com",
+    messagingSenderId: "812220762789"
   };
   firebase.initializeApp(config);
 
@@ -279,12 +280,12 @@
   function OctoGoggles(){
     toastr.clear();
     var info={};
-    var errors=true;
+    var errors=[];
     $('form#contact-form').find('.form-control').each(function(){
           info[$(this).attr('name')]=$(this).val();
     });
     if (info.name=='') {
-      errors==false;
+      errors.push('Name');
       $('small#name').fadeIn();
       $('input#name').css('border-color','red');
     }else{
@@ -292,7 +293,7 @@
       $('small#name').hide();
     }
     if (info.email=='') {
-      errors==false;
+      errors.push('Email');
       $('input#email').css('border-color','red');
       $('small#email').fadeIn();
     }else{
@@ -300,14 +301,15 @@
       $('small#email').hide();
     }
     if (info.message=='') {
-      errors==false;
+      errors.push('Message');
       $('textarea#message').css('border-color','red');
       $('small#message').fadeIn();
     }else{
       $('textarea#message').css('border-color','#ccc');
       $('small#message').hide();
     }
-    if (errors) {
+    if (errors.length==0) {
+      info.phonenumber=$('input#phonenumber').val() !=='' ? $('input#phonenumber').val() :'Not Set!';
       $('#confirmation_message').show();
       console.log(info);
       SaveMessage(info);
@@ -318,16 +320,14 @@
   function SaveMessage(info){
      $('form#contact-form')[0].reset();
     var newMessageRef=messagesRef.push();
-    newMessageRef.set({
-      name:$('input#name').val(),
-      email:$('input#email').val(),
-      phonenumber:$('input#phonenumber').val() !=='' ? $('input#phonenumber').val() :'Not Set!',
-      message:$('input#message').val(),
-    });
+
+    newMessageRef.set(info);
+    
     setTimeout(function(){
       $('#confirmation_message').html('Sent!');
       $('#confirmation_message').html('Sending.....');
-      $('#confirmation_message').hide();
+      $('#confirmation_message').css('display','none');
+      toastr.info('Message Sent!');
     }, 2000);
   }
   console.log("%cSTOP! I am watching you!", "color: red; font-size: x-large");
