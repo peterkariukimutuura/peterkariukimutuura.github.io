@@ -11,13 +11,11 @@
     <meta name="keywords" content="Peter Kariuki Mutuura,Computer Science,KarisYgBorabora, Karis , Moringa School , Laikipia University">
     <meta name="author" content="Peter Kariuki Mutuura">
 
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="Font-Awesome-4.7/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/templatemo-style.css">
-    <link rel="stylesheet" type="text/css" href="css/toastr.min.css">
     <link rel="shortcut icon" href="images/26492399.jpg" type="image/x-icon">
 
     
@@ -39,26 +37,6 @@
       }
       a#Github:hover{
         color:#c8ec09 !important;
-      }
-      .glyphicon.spinning {
-        animation: spin 1s infinite linear;
-        -webkit-animation: spin2 1s infinite linear;
-      }
-      @keyframes spin {
-        from {
-          transform: scale(1) rotate(0deg);
-        }
-        to {
-          transform: scale(1) rotate(360deg);
-        }
-      }
-      @-webkit-keyframes spin2 {
-        from {
-          -webkit-transform: rotate(0deg);
-        }
-        to {
-          -webkit-transform: rotate(360deg);
-        }
       }
     </style>
 </head>
@@ -107,7 +85,7 @@
           <div class="tm-left-col">
 
              <div class="tm-border-box tm-gray-border-br tm-img-box-1">
-              <a href="#" target="_blank">
+              <a href="http://esurance365.com/" target="_blank">
                 <img src="images/esurance365.jpg" alt="esurance365" class="tm-img tm-img-tl">
               </a> 
              </div>  
@@ -187,7 +165,7 @@
            </p>
            <h2 class="contact-title">Social Media Links</h2>
            <p>
-             <a href="https://www.facebook.com/KarisYgBorabora" style="color: #0def54;"  id="Facebook"><i class="fa fa-facebook-square"></i> Facebook</a> <br>
+             <a href="https://www.facebook.com/KarisYgBorabora" target="_blank" style="color: #0def54;"  id="Facebook"><i class="fa fa-facebook-square"></i> Facebook</a> <br>
              <a href="https://www.linkedin.com/in/peterkariukimutuura/" target="_blank" style="color: #13c7ff;"  id="LinkedIn"><i class="fa fa-linkedin"></i> LinkedIn</a> <br>
              <a href="https://github.com/peterkariukimutuura" target="_blank" style="color: #ff0039;"  id="Github"><i class="fa fa-github"></i></i> Github </a> <br>
              <a href="https://gitlab.com/peterkariukimutuura" target="_blank" style="color: #ff0039;"  id="Github"><i class="fa fa-gitlab"></i></i> Gitlab </a> <br>
@@ -196,40 +174,41 @@
        </div>
        <div class="col-lg-6 col-md-6 content-item tm-content-box tm-white-translucent-bg">
 
-           <h2 class="main-title text-center dark-blue-text" style="margin-top: 0px !important;">Send Me a Message</h2>
-           <form action="#" method="post" name="contact-form" class="contact-form" id="contact-form">
+           <!-- <h2 class="main-title text-center dark-blue-text" style="margin-top: 0px !important;">You still </h2> -->
+           <h2 class="main-title text-center dark-blue-text" style="margin-top: 0px !important;">
+             Contact Form 
+           </h2>
+           <div class="row">
+           <img src="images/cv.jpg" alt="Peter Kariuki Mutuura's Resume" style="max-width: 100%; max-height: 100%;">
+             
+           </div>
+           <br>
+           <p class="text-center text-info" style="font-size: 18px;">
+            Ooops.. sorry ,You can send me any requests through my email or give me a call.
+           </p>
+           <!-- <h2 class="main-title text-center dark-blue-text" style="margin-top: 0px !important;">Send Me a Message</h2> -->
+<!--            <form action="#" method="post" name="contact-form" class="contact-form">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="form-group">
-                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name">
-                    <small class="error" id="name" style="color: red;display: none;">Name is required</small>
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required>
                 </div>    
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="form-group contact-field">
-                    <input name="email" type="email" class="form-control" id="email" placeholder="Email" >
-                    <small class="error" id='email' style="color: red;display: none;">Email is required</small>
-
+                    <input name="email" type="email" class="form-control" id="email" placeholder="Email" required>
                 </div>    
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="form-group contact-field">
-                    <input name="phonenumber" type="text" class="form-control" id="phonenumber" placeholder="Mobile phone Number" required>
-                </div>    
-            </div>
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="form-group contact-field">
-                    <textarea name="message" rows="4" class="form-control" id="message" placeholder="Message"></textarea>
-                    <small class="error" id="message" style="color: red;display: none;">Message is required</small>
-
+                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message" required></textarea>
                 </div>    
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="form-group margin-b-0">
-                    <button type="button" id="form-submit" onclick="OctoGoggles()" class="btn pull-right btn-contact tm-btn-primary">Send </button>
-                    <small style="float: right;position: absolute;line-height: 5; color: green;display: none;" id="confirmation_message">Sending........</small>
+                    <button type="button" id="form-submit" class="btn pull-right btn-contact tm-btn-primary">Submit</button>
                 </div>    
             </div>
-        </form>
+        </form> -->
         <!--</div> -->
         <!-- <div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div> -->
 
@@ -246,13 +225,9 @@
         <!-- Company Design: <a href="#" target="_parent"></a> -->
     </div>
 </div>
-<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="js/toastr.min.js"></script>
-
-
-<script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
-<script>
-
+<script type="text/javascript">
+  document.getElementsByClassName("tm-current-year").value = new Date().getFullYear();
+  console.log("%cSTOP! I am watching you!", "color: red; font-size: x-large");
   
 </script>
 </body>
