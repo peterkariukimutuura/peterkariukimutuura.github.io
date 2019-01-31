@@ -64,4 +64,61 @@
       toastr.info('Message Sent!');
     }, 2000);
   }
+
+
+
+  function KarisLogin(){
+    var email =$("input#inputEmail").val();
+    var password =$("input#inputPassword").val();
+    console.log(email,password);
+
+    return false;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   console.log("%cSTOP! I am watching you!", "color: red; font-size: x-large");
