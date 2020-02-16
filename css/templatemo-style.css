@@ -49,7 +49,7 @@ p {
 .content-item {
     padding-right: 5%;
     padding-left: 5%;
-    min-height: 675px !important;
+    min-height: 525px !important;
 }
 .content-item p:last-child {
     margin-bottom: 0;
