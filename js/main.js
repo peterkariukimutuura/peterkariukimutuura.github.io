@@ -47,6 +47,8 @@
       $('#confirmation_message').show();
       // console.log(info);
       SaveMessage(info);
+    }else{
+      toastr.warning('Fill in the all form fields!');
     }
 
   }

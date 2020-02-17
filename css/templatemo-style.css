@@ -179,13 +179,15 @@ p {
 h1 { font-size: 54px; }
 
 .tm-btn-primary { 
-    background-color: #cc3467; 
+    /*background-color: #cc3467; */
+    background-color: #36920f;
     color: white;
 }
 
 .tm-btn-primary:hover,
 .tm-btn-primary:focus {
-    background-color: #e74a7e;
+    /*background-color: #e74a7e;*/
+    background-color: #36920f;
     color: white;
 }
 
