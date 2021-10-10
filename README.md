@@ -1,8 +1,2 @@
-###  Email : peterkariukimutuura@gmail.com
-
-Visit site. [https://peterkariukimutuura.github.io/](https://peterkariukimutuura.github.io/)
-
-
-
-
-
+# Site under construction
+- see my profile [https://www.linkedin.com/in/peterkariukimutuura/](https://www.linkedin.com/in/peterkariukimutuura/)
